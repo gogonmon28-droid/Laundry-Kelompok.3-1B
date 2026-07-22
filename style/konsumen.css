@@ -1,0 +1,967 @@
+/* ==========================================================================
+   konsumen.css — Combined styles for all pages
+   Scoped by body class: page-index, page-konsumen, page-kelompok,
+                          page-lacak, page-progress
+   ========================================================================== */
+
+/* ---------- CSS VARIABLES (kelompok) ---------- */
+:root {
+  --brand: #0d6efd;
+  --brand-light: #00a2ff;
+  --ink: #1b2733;
+  --muted: #64748b;
+  --bg-soft: #eef4ff;
+}
+
+/* ---------- CSS VARIABLES (progress-cucian) ---------- */
+.page-progress {
+  --card: #FFFFFF;
+  --ink: #1F2A37;
+  --sub: #7686A0;
+  --line: #E3ECF7;
+  --blue: #2F6FE4;
+  --blue-deep: #1D4FB0;
+  --blue-soft: #EAF2FE;
+  --sky: #4A90D9;
+  --done: #1BA97A;
+  --done-soft: #E4F5EE;
+  --pending: #C7CFDA;
+}
+
+/* ==========================================================================
+   INDEX PAGE — .page-index
+   ========================================================================== */
+
+.page-index {
+  font-family: Poppins, sans-serif;
+  background: #f4f8fc;
+  padding-top: 56px;
+  font-size: 13.5px;
+}
+
+.page-index .navbar {
+  background: linear-gradient(90deg, #0d6efd, #00a2ff);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  padding: 8px 0;
+}
+
+.page-index .navbar-brand { font-size: 16px; }
+.page-index .nav-link,
+.page-index .btn { font-size: 13px; }
+
+.page-index .hero {
+  background: linear-gradient(90deg, #0d6efd, #00b7ff);
+  border-radius: 18px;
+  padding: 45px 24px;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.page-index .hero h1 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.page-index .hero p { font-size: 13.5px; }
+
+.page-index .card {
+  border: none;
+  border-radius: 14px;
+  transition: 0.3s;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.page-index .card:hover {
+  transform: translateY(-5px);
+}
+
+.page-index .card h4 { font-size: 15px; }
+.page-index .card p { font-size: 13px; }
+
+.page-index .icon {
+  font-size: 38px;
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+
+.page-index .section-title {
+  font-weight: bold;
+  margin: 35px 0 20px;
+  text-align: center;
+  color: #0d6efd;
+  font-size: 20px;
+}
+
+.page-index .promo {
+  background: #ffc107;
+  border-radius: 14px;
+  padding: 28px;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+}
+.page-index .promo h2 { font-size: 20px; }
+.page-index .promo h3 { font-size: 18px; }
+
+.page-index footer {
+  background: #0d6efd;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 12.5px;
+}
+.page-index footer h3 { font-size: 16px; }
+.page-index footer p { margin-bottom: 4px; }
+
+.page-index .scroll-top-btn {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #0d6efd, #00a2ff);
+  color: white;
+  box-shadow: 0 6px 16px rgba(13, 110, 253, 0.25);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.page-index .table { font-size: 13px; }
+.page-index .table th,
+.page-index .table td { padding: 8px 10px; }
+
+/* ==========================================================================
+   KONSUMEN PAGE — .page-konsumen
+   ========================================================================== */
+
+.page-konsumen {
+  background: #f4f8fb;
+  font-family: Poppins, sans-serif;
+  padding-top: 56px;
+  font-size: 13.5px;
+}
+
+.page-konsumen .navbar {
+  background: linear-gradient(90deg, #0d6efd, #00a2ff);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  padding: 8px 0;
+}
+
+.page-konsumen .navbar-brand { font-size: 16px; }
+.page-konsumen .nav-link,
+.page-konsumen .btn { font-size: 13px; }
+
+.page-konsumen .header {
+  background: linear-gradient(135deg, #0d6efd, #4dabf7);
+  color: white;
+  padding: 28px 0;
+  text-align: center;
+}
+.page-konsumen .header h1 { font-size: 22px; }
+.page-konsumen .header p { font-size: 13px; margin-bottom: 0; }
+
+.page-konsumen .card {
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.page-konsumen .form-label { font-size: 12.5px; margin-bottom: 3px; }
+.page-konsumen .form-control,
+.page-konsumen .form-select { font-size: 13px; padding: 7px 10px; }
+
+.page-konsumen .btn-pesan {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.page-konsumen #hasilPesan { display: none; }
+
+.page-konsumen .mon {
+  font-size: 12.5px;
+  color: black;
+}
+
+/* ==========================================================================
+   KELOMPOK PAGE — .page-kelompok
+   ========================================================================== */
+
+.page-kelompok {
+  font-family: "Poppins", sans-serif;
+  background: #f4f8fc;
+  padding-top: 64px;
+  font-size: 13.5px;
+  color: var(--ink);
+}
+
+.page-kelompok * {
+  box-sizing: border-box;
+}
+
+.page-kelompok .navbar {
+  background: linear-gradient(90deg, #0d6efd, #00a2ff);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  padding: 8px 0;
+}
+
+.page-kelompok .navbar-brand {
+  font-size: 16px;
+}
+
+.page-kelompok .nav-link,
+.page-kelompok .btn {
+  font-size: 13px;
+}
+
+/* ---------- HERO ---------- */
+.page-kelompok .kk-hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, #eaf3ff 0%, #f4f8fc 100%);
+  border-radius: 22px;
+  margin-top: 22px;
+  padding: 48px 40px;
+}
+
+.page-kelompok .kk-badge {
+  display: inline-block;
+  background: #dceaff;
+  color: var(--brand);
+  font-weight: 600;
+  font-size: 11.5px;
+  letter-spacing: 0.5px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.page-kelompok .kk-hero h1 {
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 1.15;
+  margin-bottom: 14px;
+  color: var(--ink);
+}
+
+.page-kelompok .kk-hero h1 span {
+  color: var(--brand);
+}
+
+.page-kelompok .kk-hero p {
+  color: var(--muted);
+  font-size: 14px;
+  max-width: 420px;
+  margin-bottom: 0;
+}
+
+.page-kelompok .kk-illustration {
+  position: relative;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-kelompok .kk-illustration .bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.9), rgba(13, 110, 253, 0.08));
+  border: 1px solid rgba(13, 110, 253, 0.15);
+}
+
+.page-kelompok .kk-illustration .b1 {
+  width: 210px;
+  height: 210px;
+  top: 5px;
+  right: 40px;
+}
+
+.page-kelompok .kk-illustration .b2 {
+  width: 60px;
+  height: 60px;
+  bottom: 10px;
+  left: 10px;
+}
+
+.page-kelompok .kk-illustration .b3 {
+  width: 26px;
+  height: 26px;
+  bottom: 60px;
+  left: 70px;
+}
+
+.page-kelompok .kk-illustration .fa-washing-machine {
+  position: relative;
+  font-size: 130px;
+  color: var(--brand);
+  z-index: 2;
+  filter: drop-shadow(0 12px 18px rgba(13, 110, 253, 0.25));
+}
+
+.page-kelompok .kk-illustration .fa-basket-shopping {
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  font-size: 58px;
+  color: #c99a5b;
+  z-index: 2;
+}
+
+.page-kelompok .kk-illustration .fa-seedling {
+  position: absolute;
+  right: -10px;
+  top: 10px;
+  font-size: 46px;
+  color: #4caf6d;
+  z-index: 2;
+}
+
+/* ---------- MEMBER CARDS ---------- */
+.page-kelompok .kk-section-title {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 40px 0 22px;
+  text-align: center;
+  color: var(--ink);
+}
+
+.page-kelompok .member-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 26px 20px 22px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(13, 110, 253, 0.08);
+  transition: 0.25s;
+  height: 100%;
+  border: 1px solid #eef2f7;
+}
+
+.page-kelompok .member-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(13, 110, 253, 0.15);
+}
+
+.page-kelompok .avatar-wrap {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 14px;
+}
+
+.page-kelompok .avatar-wrap .avatar-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(160deg, #dceaff, #f4f8fc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px #dceaff;
+  overflow: hidden;
+}
+
+.page-kelompok .avatar-wrap .avatar-circle i {
+  font-size: 46px;
+  color: #7fa9f0;
+}
+
+.page-kelompok .avatar-wrap .avatar-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.page-kelompok .avatar-wrap .role-badge {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  font-size: 13px;
+}
+
+.page-kelompok .role-badge.lead {
+  color: #0d6efd;
+}
+
+.page-kelompok .role-badge.dev {
+  color: #ff5da2;
+}
+
+.page-kelompok .role-badge.design {
+  color: #2bb673;
+}
+
+.page-kelompok .role-badge.data {
+  color: #8a5cf6;
+}
+
+.page-kelompok .member-name {
+  font-weight: 700;
+  font-size: 15.5px;
+  margin-bottom: 2px;
+}
+
+.page-kelompok .member-role {
+  color: var(--brand);
+  font-weight: 600;
+  font-size: 12.5px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.page-kelompok .member-desc {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+  min-height: 48px;
+}
+
+.page-kelompok .social-row {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.page-kelompok .social-row a {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #eef2f7;
+  color: #4a5568;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12.5px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.page-kelompok .social-row a:hover {
+  background: var(--brand);
+  color: #fff;
+}
+
+/* ---------- VALUES STRIP ---------- */
+.page-kelompok .kk-values {
+  background: var(--bg-soft);
+  border-radius: 18px;
+  padding: 26px 20px;
+  margin-top: 40px;
+}
+
+.page-kelompok .kk-value-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.page-kelompok .kk-value-icon {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--brand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  box-shadow: 0 3px 8px rgba(13, 110, 253, 0.15);
+}
+
+.page-kelompok .kk-value-item h6 {
+  font-weight: 700;
+  font-size: 13.5px;
+  margin-bottom: 2px;
+}
+
+.page-kelompok .kk-value-item p {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+/* ---------- FOOTER ---------- */
+.page-kelompok footer.kk-footer {
+  background: #fff;
+  color: var(--ink);
+  margin-top: 45px;
+  padding: 34px 0 16px;
+  border-top: 1px solid #eef2f7;
+  font-size: 12.5px;
+}
+
+.page-kelompok footer.kk-footer h5 {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.page-kelompok footer.kk-footer .brand-line {
+  font-weight: 700;
+  color: var(--brand);
+  font-size: 15px;
+}
+
+.page-kelompok footer.kk-footer .muted {
+  color: var(--muted);
+}
+
+.page-kelompok footer.kk-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-kelompok footer.kk-footer ul li {
+  margin-bottom: 7px;
+}
+
+.page-kelompok footer.kk-footer ul li a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.page-kelompok footer.kk-footer ul li a:hover {
+  color: var(--brand);
+}
+
+.page-kelompok footer.kk-footer .contact-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  color: var(--muted);
+}
+
+.page-kelompok footer.kk-footer .contact-line i {
+  color: var(--brand);
+  width: 16px;
+}
+
+.page-kelompok .kk-social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.page-kelompok .kk-social-icons a {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-soft);
+  color: var(--brand);
+  text-decoration: none;
+}
+
+.page-kelompok footer.kk-footer .copyright {
+  text-align: center;
+  color: var(--muted);
+  font-size: 11.5px;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #eef2f7;
+}
+
+/* ==========================================================================
+   LACAK PESANAN PAGE — .page-lacak
+   ========================================================================== */
+
+.page-lacak {
+  font-family: Poppins, sans-serif;
+  background: linear-gradient(135deg, #f4f8fc 0%, #eef6ff 100%);
+  margin: 0;
+  padding: 0;
+  font-size: 13.5px;
+}
+
+.page-lacak .navbar {
+  background: linear-gradient(90deg, #0d6efd, #00a2ff);
+  padding: 8px 0;
+}
+.page-lacak .navbar-brand { font-size: 16px; }
+.page-lacak .nav-link,
+.page-lacak .btn { font-size: 13px; }
+
+.page-lacak .page-wrap {
+  min-height: calc(100vh - 56px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 14px;
+}
+
+.page-lacak .tracking-card {
+  width: 100%;
+  max-width: 560px;
+  background: linear-gradient(145deg, #ffffff, #f7fbff);
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 14px 35px rgba(13, 110, 253, 0.12);
+  border: 1px solid rgba(13, 110, 253, 0.08);
+}
+
+.page-lacak .tracking-header {
+  text-align: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eaf2ff;
+}
+
+.page-lacak h2 {
+  color: #0d6efd;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.page-lacak .subtitle {
+  color: #6c757d;
+  margin: 0;
+  font-size: 13px;
+}
+
+.page-lacak .form-control {
+  border-radius: 10px;
+  padding: 10px 12px;
+  border: 1px solid #dce8f7;
+  font-size: 13px;
+}
+
+.page-lacak .btn-blue-black {
+  background: linear-gradient(90deg, #0d6efd, #00a2ff);
+  color: #000 !important;
+  font-weight: 700;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 13.5px;
+}
+.page-lacak .btn-blue-black:hover { opacity: .95; color: #000 !important; }
+
+/* ==========================================================================
+   PROGRESS CUCIAN PAGE — .page-progress
+   ========================================================================== */
+
+.page-progress {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: var(--ink);
+  min-height: 100vh;
+  font-size: 13px;
+  background:
+    radial-gradient(circle at 12% 8%, rgba(47, 111, 228, 0.14), transparent 38%),
+    radial-gradient(circle at 90% 15%, rgba(74, 144, 217, 0.10), transparent 42%),
+    linear-gradient(180deg, #F4F8FE 0%, #F9FBFF 45%, #FFFFFF 100%);
+  padding: 80px 14px 48px;
+  overflow-x: hidden;
+}
+
+.page-progress .navbar {
+  background: linear-gradient(90deg, #0d6efd, #00a2ff);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  padding: 8px 0;
+}
+
+.page-progress .navbar-brand { font-size: 16px; }
+.page-progress .nav-link,
+.page-progress .btn { font-size: 13px; }
+
+.page-progress * { box-sizing: border-box; }
+
+.page-progress::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 18%, rgba(74, 144, 217, 0.08), transparent 20%),
+    radial-gradient(circle at 80% 28%, rgba(47, 111, 228, 0.06), transparent 18%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.page-progress .wrap {
+  position: relative;
+  z-index: 1;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.page-progress .topbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.page-progress .back-pill {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ffffff, #f4f8ff);
+  border: 1px solid rgba(47, 111, 228, 0.18);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+  box-shadow: 0 8px 18px rgba(31, 42, 55, 0.06);
+  font-size: 16px;
+  flex: none;
+  text-decoration: none;
+  transition: transform .22s ease;
+}
+
+.page-progress .back-pill:hover {
+  transform: translateY(-1px);
+}
+
+.page-progress .topbar h1 {
+  font-size: 17px;
+  margin: 0;
+}
+
+.page-progress .topbar p {
+  margin: 2px 0 0;
+  font-size: 11.5px;
+  color: var(--sub);
+}
+
+.page-progress .card {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 16px 18px 6px;
+  box-shadow: 0 8px 22px rgba(31, 42, 55, 0.06);
+  margin-bottom: 14px;
+}
+
+.page-progress .card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 12px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid var(--line);
+}
+
+.page-progress .thumb {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  flex: none;
+  background: linear-gradient(135deg, var(--blue), var(--sky));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+}
+
+.page-progress .card-head .name {
+  font-weight: 600;
+  font-size: 13.5px;
+}
+
+.page-progress .card-head .code {
+  font-size: 11px;
+  color: var(--sub);
+  margin-top: 1px;
+}
+
+.page-progress .status-chip {
+  margin-left: auto;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--done);
+  background: var(--done-soft);
+  padding: 4px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.page-progress table.detail {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 4px 0 10px;
+}
+
+.page-progress table.detail tr td {
+  padding: 6px 0;
+  font-size: 12.5px;
+  vertical-align: top;
+}
+
+.page-progress table.detail tr td:first-child {
+  color: var(--sub);
+  width: 42%;
+}
+
+.page-progress table.detail tr td:last-child {
+  font-weight: 600;
+  text-align: right;
+}
+
+.page-progress table.detail tr+tr td {
+  border-top: 1px dashed var(--line);
+}
+
+.page-progress .section-title {
+  font-size: 13px;
+  font-weight: 700;
+  margin: 18px 0 4px 2px;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.page-progress .section-title::before {
+  content: "";
+  width: 3px;
+  height: 14px;
+  background: var(--blue);
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.page-progress .timeline {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 16px 18px 20px;
+  box-shadow: 0 8px 22px rgba(31, 42, 55, 0.06);
+}
+
+.page-progress .t-item {
+  display: grid;
+  grid-template-columns: 62px 20px 1fr;
+  column-gap: 2px;
+}
+
+.page-progress .t-time {
+  font-size: 11px;
+  color: var(--sub);
+  padding-top: 1px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.page-progress .t-rail {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-progress .t-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 2px;
+  flex: none;
+  background: var(--pending);
+  border: 2px solid var(--card);
+  box-shadow: 0 0 0 1px var(--pending);
+}
+
+.page-progress .t-item.done .t-dot {
+  background: var(--done);
+  box-shadow: 0 0 0 1px var(--done);
+}
+
+.page-progress .t-item.current .t-dot {
+  background: var(--sky);
+  box-shadow: 0 0 0 3px rgba(62, 124, 177, 0.18);
+  width: 12px;
+  height: 12px;
+  margin-top: 1px;
+}
+
+.page-progress .t-connector {
+  width: 2px;
+  flex: 1;
+  background: var(--line);
+  margin: 2px 0;
+}
+
+.page-progress .t-item.done .t-connector { background: var(--done); }
+.page-progress .t-item:last-child .t-connector { display: none; }
+
+.page-progress .t-body { padding-bottom: 20px; }
+.page-progress .t-item:last-child .t-body { padding-bottom: 0; }
+
+.page-progress .t-title {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--pending);
+  font-weight: 500;
+}
+
+.page-progress .t-item.done .t-title { color: var(--done); font-weight: 600; }
+.page-progress .t-item.current .t-title { color: var(--sky); font-weight: 700; }
+
+.page-progress .t-sub {
+  font-size: 11px;
+  color: var(--sub);
+  margin-top: 2px;
+  line-height: 1.4;
+}
+
+.page-progress .footnote {
+  text-align: center;
+  font-size: 10.5px;
+  color: var(--sub);
+  margin-top: 14px;
+}
+
+@media (prefers-reduced-motion:no-preference) {
+  .page-progress .card,
+  .page-progress .timeline {
+    animation: rise .4s ease both;
+  }
+  .page-progress .timeline { animation-delay: .06s; }
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
