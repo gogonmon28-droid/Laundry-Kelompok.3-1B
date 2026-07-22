@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Cucian - Laundry Premium</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style/konsumen.css" />
+</head>
+
+<body class="page-progress">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fa-solid fa-shirt"></i> Laundry Premium
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#layanan">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lacak_pesanan.html">Progress cucian</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#harga">Harga</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kelompok.html">Kelompok Kami</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#kontak">Kontak</a></li>
+                    <li class="nav-item ms-2">
+                        <a href="admin/admin-login.html" class="btn btn-warning btn-sm">Login Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrap">
+        <div class="topbar">
+            <a href="lacak_pesanan.html" class="back-pill">←</a>
+            <div>
+                <h1>Progress Cucian</h1>
+                <p>Pantau status cucianmu secara langsung</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-head">
+                <div class="thumb">🧺</div>
+                <div>
+                    <div class="name">Cuci + Setrika Reguler</div>
+                    <div class="code">Order #LDR-20260713-014</div>
+                </div>
+                <div class="status-chip">Sedang Dicuci</div>
+            </div>
+
+            <table class="detail">
+                <tr><td>Nama Pelanggan</td><td>Dewi</td></tr>
+                <tr><td>Berat Cucian</td><td>4.2 kg</td></tr>
+                <tr><td>Layanan</td><td>Cuci Kering + Setrika</td></tr>
+                <tr><td>Tanggal Masuk</td><td>13 Jul 2026, 09.10</td></tr>
+                <tr><td>Estimasi Selesai</td><td>15 Jul 2026, 18.00</td></tr>
+                <tr><td>Total Biaya</td><td>Rp 15.000</td></tr>
+            </table>
+        </div>
+
+        <div class="section-title">Status Pesanan</div>
+
+        <div class="timeline">
+            <div class="t-item current">
+                <div class="t-time">13 Jul<br>18.40</div>
+                <div class="t-rail">
+                    <div class="t-dot"></div>
+                    <div class="t-connector"></div>
+                </div>
+                <div class="t-body">
+                    <div class="t-title">Cucian sedang dalam proses pencucian.</div>
+                    <div class="t-sub">Cucianmu sedang dicuci menggunakan deterjen pilihan.</div>
+                </div>
+            </div>
+
+            <div class="t-item done">
+                <div class="t-time">13 Jul<br>09.25</div>
+                <div class="t-rail">
+                    <div class="t-dot"></div>
+                    <div class="t-connector"></div>
+                </div>
+                <div class="t-body">
+                    <div class="t-title">Cucian telah ditimbang dan dicatat.</div>
+                    <div class="t-sub">Berat cucian 4.2 kg, layanan Cuci Kering + Setrika.</div>
+                </div>
+            </div>
+
+            <div class="t-item done">
+                <div class="t-time">13 Jul<br>09.10</div>
+                <div class="t-rail">
+                    <div class="t-dot"></div>
+                    <div class="t-connector"></div>
+                </div>
+                <div class="t-body">
+                    <div class="t-title">Pesanan diterima oleh outlet.</div>
+                    <div class="t-sub">Cucian diterima di Laundry Premium, siap diproses.</div>
+                </div>
+            </div>
+
+            <div class="t-item done">
+                <div class="t-time">13 Jul<br>08.55</div>
+                <div class="t-rail">
+                    <div class="t-dot"></div>
+                </div>
+                <div class="t-body">
+                    <div class="t-title">Pesanan dibuat oleh pelanggan.</div>
+                    <div class="t-sub">Menunggu cucian diantar/diterima outlet.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footnote">Data hanya tercatat di panel admin - Laundry Premium</div>
+    </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="style/konsumen.js"></script>
+</body>
+
+</html>
